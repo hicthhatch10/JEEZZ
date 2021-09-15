@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PROYEK PIPIPIP</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<a href="#" class="logo">NEWBIE </a>
+		<ul>
+			<li><a href="#" class="maen">Home</a></li>
+			<li><a href="#">Produk</a></li>
+			<li><a href="#">Proyek</a></li>
+			<li><a href="#">Kontak</a></li>
+		</ul>
+	</header>
+	<section>
+		<img src="stars.png" id="bintang">
+		<img src="moon.png" id="bln">
+		<img src="mountains_behind.png" id="gunung">
+		<h2 id="land">NO MAN'S LAND</h2>
+		<a href="#text" id="jelajah">Cari Tau!</a>
+		<img src="mountains_front.png" id="depan">
+	</section>
+		
+	<div class="sec" id="text">
+		<h2>WRAPPING LAND </h2>
+		<p>Starting strong with a very scary house: The Lemp Mansion in St. Louis, which is known to be one of the most haunted places in America due to a tragic history.
+			The 33-room home was built in the 1860s by William Lemp, a successful brewery owner who ended up killing himself in 1904 after the youngest of his four sons, Frederick, died. A few years later, his wife also died of cancer in the house. Then, in 1922, William Lemp Jr., shot himself in the same room William Sr. killed himself.
+		<br><br>As if that weren't enough tragedy for one place, in 1949, Charles Lemp—William's third son—shot his dog in the basement of the home and then killed himself in his room. That same year, the house was sold and transformed into a boarding house, where reports of hauntings began. According to Destination America, witnesses have experienced burning sensations and slamming doors.
+			Today, the Lemp Mansion is a restaurant and inn that also holds events. On Sunday night, the inn hosts a Murder Mystery Dinner.</p>
+	</div>
+	<div class="Seputar Produk" id=>
+
+
+
+
+	</div>
+		<script type="text/javascript">
+			let bintang = document.getElementById('bintang');
+			let bln= document.getElementById('bln');
+			let gunung= document.getElementById('gunung');
+			let depan= document.getElementById('depan');
+			let land= document.getElementById('land');
+		    let jelajah= document.getElementById('jelajah');
+		    let header=document.querySelector('header');
+
+		    window.addEventListener('scroll', function(){
+		    	let value= window.scrollY;
+		    	bintang.style.left = value*0.25+'px';
+		    	bln.style.top=value*1.2+'px';
+		    	gunung.style.top=value*0.5+'px';
+		    	depan.style.top=value*0+'px';
+		    	land.style.marginRight =value*4+'px';
+		    	land.style.marginTop =value*1.5+'px';
+		    	jelajah.style.marginTop=value*1.5+'px';
+		    	header.style.top=value*0.5+'px';
+		    })
+		</script>
+</body>
+</html>
